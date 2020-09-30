@@ -3,13 +3,13 @@ from GetWall import get_last
 from Send import send_message
 import time
 
-login = input('Введите логин/телефон аккаута: ')
-password = input('Введите пароль аккаунта: ')
+login = input('VK login: ')
+password = input('VK pass: ')
 
 me = auth(login=login, password=password)
-group = auth(token=input('Введите токен сообщества: '))
+group = auth(token=input('Group token: '))
 
-group_id = int(input('Введите id группы: '))
+group_id = int(input('Group ID: '))
 
 last_date = 0
 while 1:

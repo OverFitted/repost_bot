@@ -2,7 +2,7 @@ import vk_api
 
 
 def auth_handler():
-    key = int(input("Введите код двух факторной аутентификации: "))
+    key = int(input("2 auth factor code: "))
 
     remember_device = True
 
@@ -22,4 +22,4 @@ def auth(login=None, password=None, token=None):
             me.auth()
         return me
     else:
-        return print('Для аутентификации нужно ввести логин и пароль ли токен сообщества')
+        return print('Need pass and login or group token')

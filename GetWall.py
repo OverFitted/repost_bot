@@ -9,4 +9,4 @@ def get_last(authed=None, g_id=None):
         except:
             return wall["items"][0]
     else:
-        return print('Для использования этой функции нужно сначала войти в аккаунт')
+        return print("At first auth ur account")
